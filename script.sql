@@ -1,7 +1,7 @@
--- Cambia a tu usuario de trabajo
+-- Cambio a mi usuario de trabajo hr
 ALTER SESSION SET CURRENT_SCHEMA=hr;
 
--- Crear tabla DOCENTE
+-- Creao tabla DOCENTE
 CREATE TABLE docente (
   id         NUMBER PRIMARY KEY,
   nombre     VARCHAR2(100) NOT NULL,
@@ -9,10 +9,10 @@ CREATE TABLE docente (
   correo     VARCHAR2(100) NOT NULL
 );
 
--- Crear secuencia para DOCENTE
+-- Creao secuencia para DOCENTE
 CREATE SEQUENCE docente_seq START WITH 1 INCREMENT BY 1;
 
--- Crear tabla CURSO
+-- Creao tabla CURSO
 CREATE TABLE curso (
   id            NUMBER PRIMARY KEY,
   nombre        VARCHAR2(100) NOT NULL,
